@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Suivi Orages - Seine-et-Marne</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #f0f2f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #00509e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #003366;
+            margin-top: 40px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .info-box {
+            background: #ffffff;
+            border-left: 5px solid #ffcc00;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        .info-box h3 {
+            margin-top: 0;
+        }
+
+        a.button {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 10px 15px;
+            background-color: #00509e;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        a.button:hover {
+            background-color: #003f7f;
+        }
+
+        @media (max-width: 768px) {
+            iframe {
+                height: 400px;
+            }
+
+            header {
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Suivi des orages - Seine-et-Marne</h1>
+        <p>Vigilances, cartes temps réel, prévisions et conseils en cas d'orages</p>
+    </header>
+
+    <main>
+
+        <section class="info-box">
+            <h3>Conseils en cas d’alerte orages :</h3>
+            <ul>
+                <li>Évitez les activités en extérieur (forêt, montagne, champ, sport...)</li>
+                <li>Ne vous abritez pas sous un arbre isolé</li>
+                <li>Débranchez les appareils électriques sensibles</li>
+                <li>Ne téléphonez pas avec un téléphone filaire</li>
+                <li>Évitez les déplacements en voiture dans les zones inondables</li>
+            </ul>
+        </section>
+
+        <h2>1. Vigilance Météo - Seine-et-Marne</h2>
+        <iframe src="https://vigilance.meteofrance.fr/fr/seine-et-marne"></iframe>
+        <p><a class="button" href="https://vigilance.meteofrance.fr/fr/seine-et-marne" target="_blank">Voir sur Météo France</a></p>
+
+        <h2>2. Radar en temps réel - Précipitations & Foudre (Meteociel)</h2>
+        <iframe src="https://www.meteociel.fr/observations-meteo/radar.php"></iframe>
+        <p><a class="button" href="https://www.meteociel.fr/observations-meteo/radar.php" target="_blank">Voir sur Meteociel</a></p>
+
+        <h2>2.1. Radar en temps réel - Précipitations & Foudre (Meteociel)</h2>
+        <iframe src="https://www.meteo60.fr/radars-precipitations-pluie-france.php"></iframe>
+        <p><a class="button" href="https://www.meteociel.fr/observations-meteo/radar.php" target="_blank">Voir sur Meteociel</a></p>
+
+        <h2>3. Radar en temps réel - Précipitations & Foudre (Meteociel)</h2>
+        <iframe src="https://www.meteociel.fr/observations-meteo/foudre.php"></iframe>
+        <p><a class="button" href="https://www.meteociel.fr/observations-meteo/radar.php" target="_blank">Voir sur Meteociel</a></p>
+
+
+
+        <h2>4. Prévisions du jour - Risques orageux (Keraunos)</h2>
+        <p>Carte des prévisions d’orages pour aujourd’hui en France, publiée chaque matin par Keraunos.</p>
+	<iframe src="https://www.keraunos.org/previsions/prevision-orage-tornade-france-convective-outlook.html"></iframe>
+        <p><a class="button" href="https://www.keraunos.org/previsions/prevision-orages-france-aujourd-hui.html" target="_blank">Voir la prévision du jour</a></p>
+
+        <h2>5. Carte temps réel - Activité orageuse en France & Europe (Keraunos)</h2>
+        <p>Suivi en direct de l'activité orageuse et des impacts de foudre.</p>
+        <p><a class="button" href="https://www.keraunos.org/observations/temps-reel/carte-observations-temps-reel-orages-europe.html" target="_blank">Voir la carte en temps réel</a></p>
+
+        <section class="info-box">
+            <h3>Risques possibles associés aux orages :</h3>
+            <ul>
+                <li><strong>Fortes pluies</strong> : inondations locales, ruissellement</li>
+                <li><strong>Grêle</strong> : dégâts matériels, toitures, voitures, cultures</li>
+                <li><strong>Rafales de vent</strong> : chutes d’arbres, lignes électriques</li>
+                <li><strong>Impact de foudre</strong> : incendies, surtensions, électrocution</li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+</html>
